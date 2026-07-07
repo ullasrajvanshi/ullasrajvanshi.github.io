@@ -11,7 +11,6 @@ author_profile: true
   font-weight: 700;
   margin-top: 2em;
   margin-bottom: 1em;
-  border-bottom: none;
 }
 
 .cv-entry {
@@ -29,23 +28,7 @@ author_profile: true
   border-radius: 6px;
   flex-shrink: 0;
   background: #fff;
-  padding: 4px;
-}
-
-.cv-logo-placeholder {
-  width: 60px;
-  height: 60px;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  flex-shrink: 0;
-  background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.6em;
-  color: #999;
-  text-align: center;
-  padding: 4px;
+  padding: 6px;
 }
 
 .cv-body {
@@ -134,7 +117,7 @@ author_profile: true
 <h2>Experience 💼</h2>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/accenture.com" alt="Accenture" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/accenture.com?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="Accenture" onerror="this.src='https://www.google.com/s2/favicons?domain=accenture.com&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Accenture</span>
@@ -146,7 +129,7 @@ author_profile: true
 </div>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/accenture.com" alt="Accenture" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/accenture.com?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="Accenture" onerror="this.src='https://www.google.com/s2/favicons?domain=accenture.com&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Accenture</span>
@@ -158,7 +141,7 @@ author_profile: true
 </div>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/fugro.com" alt="Fugro" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/fugro.com?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="Fugro" onerror="this.src='https://www.google.com/s2/favicons?domain=fugro.com&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Fugro</span>
@@ -170,7 +153,7 @@ author_profile: true
 </div>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/fugro.com" alt="Fugro" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/fugro.com?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="Fugro" onerror="this.src='https://www.google.com/s2/favicons?domain=fugro.com&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Fugro</span>
@@ -182,7 +165,7 @@ author_profile: true
 </div>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/cgi.com" alt="CGI" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/cgi.com?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="CGI" onerror="this.src='https://www.google.com/s2/favicons?domain=cgi.com&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">CGI</span>
@@ -194,7 +177,7 @@ author_profile: true
 </div>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/tudelft.nl" alt="TU Delft" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/tudelft.nl?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="TU Delft" onerror="this.src='https://www.google.com/s2/favicons?domain=tudelft.nl&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Delft University of Technology</span>
@@ -210,7 +193,7 @@ author_profile: true
 <h2>Education 🎓</h2>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/tudelft.nl" alt="TU Delft" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/tudelft.nl?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="TU Delft" onerror="this.src='https://www.google.com/s2/favicons?domain=tudelft.nl&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Delft University of Technology</span>
@@ -222,7 +205,7 @@ author_profile: true
 </div>
 
 <div class="cv-entry">
-  <img class="cv-logo" src="https://logo.clearbit.com/tudelft.nl" alt="TU Delft" onerror="this.style.display='none'">
+  <img class="cv-logo" src="https://img.logo.dev/tudelft.nl?token=pk_X3dJVpPuRnKpj0pNv5HHOQ" alt="TU Delft" onerror="this.src='https://www.google.com/s2/favicons?domain=tudelft.nl&sz=64'">
   <div class="cv-body">
     <div class="cv-header">
       <span class="cv-org">Delft University of Technology</span>
