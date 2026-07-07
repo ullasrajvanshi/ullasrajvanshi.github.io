@@ -17,7 +17,7 @@ author_profile: true
   display: flex;
   align-items: flex-start;
   gap: 1.2em;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.2em;
 }
 
 .cv-logo {
@@ -33,6 +33,8 @@ author_profile: true
 
 .cv-body {
   flex: 1;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em;
 }
 
 .cv-header {
@@ -54,15 +56,17 @@ author_profile: true
 }
 
 .cv-role {
-  font-size: 0.9em;
-  color: #555;
-  margin: 0.1em 0 0.25em 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #222;
+  margin: 0.2em 0 0.15em 0;
 }
 
 .cv-desc {
   font-size: 0.88em;
-  color: #444;
+  color: #555;
   line-height: 1.5;
+  margin: 0;
 }
 
 .cv-certs {
@@ -188,8 +192,6 @@ author_profile: true
   </div>
 </div>
 
----
-
 <h2>Education 🎓</h2>
 
 <div class="cv-entry">
@@ -216,8 +218,6 @@ author_profile: true
   </div>
 </div>
 
----
-
 <h2>Certifications 📜</h2>
 
 <ul class="cv-certs">
@@ -227,8 +227,6 @@ author_profile: true
   <li>Executive Presence & Influence <span>INSEAD</span></li>
   <li>Lean Six Sigma Green Belt <span>Bureau Tromp</span></li>
 </ul>
-
----
 
 <h2>Skills 🛠️</h2>
 
