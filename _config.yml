@@ -4,6 +4,8 @@ title                    : "Ullas Rajvanshi"
 title_separator          : "-"
 name                     : &name "Ullas Rajvanshi"
 description              : &description "Strategy Consultant | Data & AI | Amsterdam"
+minimal_mistakes_skin    : "default"
+theme_switcher           : false
 url                      : https://ullasrajvanshi.github.io  # ← change to your actual GitHub username
 baseurl                  : ""
 repository               : "ullasrajvanshi/ullasrajvanshi.github.io"  # ← change to your actual GitHub username
