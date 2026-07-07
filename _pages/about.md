@@ -1,4 +1,5 @@
 ---
+layout: archive
 permalink: /
 title: "Ullas Rajvanshi"
 excerpt: "Strategy Consultant | Data & AI | Amsterdam"
