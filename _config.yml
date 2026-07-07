@@ -6,7 +6,7 @@ name                     : &name "Ullas Rajvanshi"
 description              : &description "Strategy Consultant | Data & AI | Amsterdam"
 url                      : https://ullasrajvanshi.github.io  # ← change to your actual GitHub username
 baseurl                  : ""
-repository               : "ullasrajvanshi/ullasrajvanshi.github.io"  # ← change to your actual GitHub username
+repository               : "ullasrajvanshi.github.io"  # ← change to your actual GitHub username
 
 # Author Info
 author:
