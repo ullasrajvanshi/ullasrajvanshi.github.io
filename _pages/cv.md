@@ -3,84 +3,269 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+<style>
+.cv-section h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-bottom: none;
+}
 
-## Experience
+.cv-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2em;
+  margin-bottom: 1.6em;
+}
 
-**Accenture** — Amsterdam, Netherlands
+.cv-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 4px;
+}
 
-*Associate Manager* · Jun 2025 – Present
-- Led end-to-end delivery of a €10M+ enterprise data and digital transformation programme for a major European TSO, embedding predictive analytics, forecasting-based maintenance prioritisation, and performance reporting into core operations.
-- Directed the migration and governance of 3M+ critical infrastructure assets into a modernised data platform.
-- Served as primary Data & AI advisor to C-level stakeholders; translated analytical insights into strategic investment decisions and long-term AI roadmaps.
-- Managed a 6-person cross-functional team of data engineers, analysts, and platform architects.
-- Contributed to a winning multi-million-euro tender — authored the technical narrative and solution approach.
+.cv-logo-placeholder {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6em;
+  color: #999;
+  text-align: center;
+  padding: 4px;
+}
 
-*Consultant* · Feb 2023 – May 2025
-- Designed and delivered enterprise data platforms integrating asset management with advanced analytics.
-- Appointed Interim Delivery Lead; restructured governance, sprint delivery, and stakeholder reporting for a 10+ member team.
-- Facilitated Data & AI transformation workshops with director- and manager-level stakeholders to define roadmap priorities.
-- Developing an Agentic AI prototype for operations use cases within Accenture's Supply Chain & Engineering community.
+.cv-body {
+  flex: 1;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.cv-org {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.cv-date {
+  font-size: 0.85em;
+  color: #777;
+  white-space: nowrap;
+}
+
+.cv-role {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0.1em 0 0.25em 0;
+}
+
+.cv-desc {
+  font-size: 0.88em;
+  color: #444;
+  line-height: 1.5;
+}
+
+.cv-certs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-certs li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.92em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-certs li span {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em 2em;
+}
+
+.cv-skill-group h4 {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.cv-skill-group p {
+  font-size: 0.88em;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .cv-skills-grid { grid-template-columns: 1fr; }
+  .cv-header { flex-direction: column; gap: 0.1em; }
+}
+</style>
+
+<div class="cv-section">
+
+<h2>Experience 💼</h2>
+
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/accenture.com" alt="Accenture" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Accenture</span>
+      <span class="cv-date">Jun 2025 – Present</span>
+    </div>
+    <div class="cv-role">Associate Manager</div>
+    <div class="cv-desc">Leading €10M+ enterprise data & AI transformation for a major European TSO. Primary Data & AI advisor to C-suite.</div>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/accenture.com" alt="Accenture" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Accenture</span>
+      <span class="cv-date">Feb 2023 – May 2025</span>
+    </div>
+    <div class="cv-role">Consultant</div>
+    <div class="cv-desc">Designed enterprise data platforms integrating asset management with advanced analytics. Interim Delivery Lead for a 10+ person multidisciplinary team.</div>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/fugro.com" alt="Fugro" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Fugro</span>
+      <span class="cv-date">Dec 2021 – Jan 2023</span>
+    </div>
+    <div class="cv-role">Geospatial Data Analytics Team Lead</div>
+    <div class="cv-desc">Reduced manual data validation time by 70% with automated Python QA pipelines. Led and mentored a 3-person analytics team.</div>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/fugro.com" alt="Fugro" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Fugro</span>
+      <span class="cv-date">Nov 2020 – Nov 2021</span>
+    </div>
+    <div class="cv-role">Geo-Data Analyst</div>
+    <div class="cv-desc">Built Python ML pipelines (pandas, NumPy, scikit-learn) that scaled data processing capacity 3×.</div>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/cgi.com" alt="CGI" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">CGI</span>
+      <span class="cv-date">2018</span>
+    </div>
+    <div class="cv-role">Summer Intern</div>
+    <div class="cv-desc">Built Earth observation dashboards visualising satellite and RADAR datasets.</div>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/tudelft.nl" alt="TU Delft" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Delft University of Technology</span>
+      <span class="cv-date">2017 – 2019</span>
+    </div>
+    <div class="cv-role">Web Developer</div>
+    <div class="cv-desc">Supported digital learning systems used by 60,000+ students.</div>
+  </div>
+</div>
 
 ---
 
-**Fugro** — Utrecht, Netherlands
+<h2>Education 🎓</h2>
 
-*Geospatial Data Analytics Team Lead* · Dec 2021 – Jan 2023
-- Reduced manual data validation time by 70% by developing automated Python-based data quality workflows for large sensor datasets.
-- Led and coached a 3-person analytics team; mentored junior analysts on ML and data pipeline engineering.
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/tudelft.nl" alt="TU Delft" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Delft University of Technology</span>
+      <span class="cv-date">2018 – 2021</span>
+    </div>
+    <div class="cv-role">MSc Applied Earth Sciences</div>
+    <div class="cv-desc">Geoscience & Remote Sensing with applied data science.</div>
+  </div>
+</div>
 
-*Geo-Data Analyst* · Nov 2020 – Nov 2021
-- Scaled data processing capacity 3× by engineering Python (pandas, NumPy, scikit-learn) pipelines for high-volume sensor and spatial datasets.
-- Built dashboards communicating risk findings to mixed technical and executive audiences.
-
----
-
-**Additional Experience**
-
-- **Fugro** — Graduate Intern (2020): Statistical analysis of GNSS/IMU navigation data
-- **CGI** — Summer Intern (2018): Earth observation dashboards visualising satellite and RADAR datasets
-- **Delft University of Technology** — Web Developer (2017–2019): Supported digital learning systems used by 60,000+ students
-
----
-
-## Education
-
-**Delft University of Technology** — MSc Applied Earth Sciences · 2018–2021
-Focus on Geoscience and Remote Sensing using applied data science
-
-**Delft University of Technology** — BSc Applied Earth Sciences · 2015–2018
-Minor in Sustainable Energy Technology. Completed in 3 years.
+<div class="cv-entry">
+  <img class="cv-logo" src="https://logo.clearbit.com/tudelft.nl" alt="TU Delft" onerror="this.style.display='none'">
+  <div class="cv-body">
+    <div class="cv-header">
+      <span class="cv-org">Delft University of Technology</span>
+      <span class="cv-date">2015 – 2018</span>
+    </div>
+    <div class="cv-role">BSc Applied Earth Sciences</div>
+    <div class="cv-desc">Minor in Sustainable Energy Technology. Completed in 3 years.</div>
+  </div>
+</div>
 
 ---
 
-## Certifications
+<h2>Certifications 📜</h2>
 
-- FP&A (FPAC) Certification — AFP *(In Progress)*
-- Claude Certified Architect – Foundations (CCA-F) — Anthropic *(In Progress)*
-- Business Strategy and Financial Performance — INSEAD
-- Executive Presence & Influence — INSEAD
-- Lean Six Sigma Green Belt — Bureau Tromp
+<ul class="cv-certs">
+  <li>FP&A (FPAC) — AFP <span>In Progress</span></li>
+  <li>Claude Certified Architect – Foundations — Anthropic <span>In Progress</span></li>
+  <li>Business Strategy and Financial Performance <span>INSEAD</span></li>
+  <li>Executive Presence & Influence <span>INSEAD</span></li>
+  <li>Lean Six Sigma Green Belt <span>Bureau Tromp</span></li>
+</ul>
 
 ---
 
-## Skills
+<h2>Skills 🛠️</h2>
 
-**Data & Analytics**
-Data Strategy & Governance, Data Quality & Control, Python (pandas, NumPy, scikit-learn), SQL, Data Pipeline Engineering, Dashboards & Reporting
+<div class="cv-skills-grid">
+  <div class="cv-skill-group">
+    <h4>Data & Analytics</h4>
+    <p>Data Strategy & Governance, Python (pandas, NumPy, scikit-learn), SQL, Data Pipeline Engineering</p>
+  </div>
+  <div class="cv-skill-group">
+    <h4>AI & ML</h4>
+    <p>Machine Learning, Predictive Analytics & Forecasting, GenAI & Agentic AI Design</p>
+  </div>
+  <div class="cv-skill-group">
+    <h4>Consulting & Delivery</h4>
+    <p>C-suite Advisory, Workshop Facilitation, Business Development, Agile/Scrum, Programme Governance</p>
+  </div>
+  <div class="cv-skill-group">
+    <h4>Finance & Business</h4>
+    <p>FP&A Fundamentals, Performance Management, Business Case Development, Lean Six Sigma</p>
+  </div>
+</div>
 
-**AI & ML**
-Machine Learning (regression, classification, clustering), Predictive Analytics & Forecasting, GenAI & Agentic AI Design, AI Use-Case Identification & Roadmapping
-
-**Finance & Business**
-FP&A Fundamentals (FPAC in progress), Performance Management, Business Case & Proposal Development, Lean Six Sigma
-
-**Consulting & Delivery**
-C-suite Advisory, Storytelling & Executive Communication, Workshop Facilitation, Business Development, Cross-functional Team Leadership, Agile/Scrum, Programme Governance
-
-**Languages**
-English (fluent), Dutch (B1)
+</div>
