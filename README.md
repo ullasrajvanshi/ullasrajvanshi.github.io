@@ -57,5 +57,3 @@ Run `node --check script.js`, `node --test tests/contact.test.cjs`, and `python3
 - Accenture: https://commons.wikimedia.org/wiki/File:Accenture.svg
 - Fugro: https://www.fugro.com/fugro-logo.png (transparent padding cropped for layout).
 - TU Delft: https://www.tudelft.nl/_assets/2f383d4a929ad3d42eff11e81cdd4068/img/logo.svg
-
-Brand artwork retains its original colours. TU Delft’s supplied currentColor variant renders in black. The original visual reference was https://cribconnects.ai/en/; the implementation is original.
