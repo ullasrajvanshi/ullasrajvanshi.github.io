@@ -1,48 +1,61 @@
-# Ullas Rajvanshi — personal website
+# Ullas Rajvanshi — strategy & transformation delivery
 
-A static portfolio for GitHub Pages. Plain HTML, CSS, and JavaScript, with no build step or package dependencies. Google Fonts is optional: the site falls back to local fonts when offline.
+A hiring-focused website for Data & AI strategy, programme resets, and implementation leadership. Static HTML, CSS, and JavaScript for GitHub Pages; no build step or package dependencies.
 
 ## Preview locally
 
-From this directory, run:
+From this directory:
 
 ```sh
-python3 -m http.server 8000
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://localhost:8000. The homepage is `index.html`, the full CV is `cv/index.html`, and the existing `/projects/` URL redirects to the selected work section.
+Open http://127.0.0.1:8000/. The full CV is at `/cv/`. The existing `/projects/` address redirects to the homepage’s case studies.
 
 ## Publish on GitHub Pages
 
-1. Create a backup branch of your current `ullasrajvanshi.github.io` repository before replacing its site files.
-2. Copy `index.html`, `styles.css`, `script.js`, `.nojekyll`, and the `assets/`, `cv/`, and `projects/` folders into the repository root. Keep `.nojekyll`: it bypasses the old Jekyll theme when serving from a branch.
-3. Commit and push the changes.
-4. In the repository’s **Settings → Pages**, choose **Deploy from a branch**, then select your publishing branch and **/(root)**. If an existing Actions workflow builds Jekyll, disable that obsolete workflow or update it to publish these static files.
-5. Check the finished deployment at https://ullasrajvanshi.github.io/ and test `/cv/` and `/projects/`.
+1. Back up your existing repository on a separate branch.
+2. Extract `github-pages-website.zip` and copy its contents directly to the repository root, including the hidden `.nojekyll` file. The archive has no extra enclosing folder.
+3. Replace the old website files while preserving `.git` and any custom-domain `CNAME` file. Review existing GitHub Actions workflows before replacing Jekyll.
+4. Commit and push the files to your publishing branch.
+5. Use branch-based GitHub Pages publishing from the repository root. If your existing setup uses a Jekyll build workflow, replace that setup with static publishing.
+6. Check the homepage, `/cv/`, and `/projects/` after publishing.
 
-No files have been pushed to GitHub by this project. The original website remains live until you publish the replacement.
+This local project has not pushed changes to GitHub or changed your live website. `website-before-contractor-revamp.zip` preserves the preceding design. The `github-pages-website/` directory mirrors the current deployment files.
 
-## Edit content
+## Content and editing
 
-- Homepage copy, project cards, contact links: `index.html`.
-- Experience, education, and certifications: `cv/index.html`.
-- Colours, typography, layout, animation, and print layout: `styles.css`.
-- Mobile menu, project filtering, CV printing, and automatic year: `script.js`.
-- Portrait: `assets/portrait.jpg`.
+- `index.html`: positioning, three engagements, delivery model, case studies, introduction, and project enquiry form.
+- `cv/index.html`: professional experience, education, certifications, and skills.
+- `styles.css`: cream and light olive palette, responsive layout, and print styles.
+- `script.js`: mobile navigation, service selection, email-draft preparation, CV printing, and automatic copyright year.
+- `assets/portrait.jpg`: profile photograph.
+- `assets/logos/`: locally stored organisation logos.
 
-For a new project, copy a project `<article>`, set `data-category` to `ai` or `data`, and update the All work count. Content and metrics were taken from your public website on 23 October 2026. Review the rewritten introductory copy and certification statuses before publishing.
+The offers are **Shape the programme**, **Reset delivery**, and **Lead implementation**. Service links preselect the relevant enquiry option. The delivery model explains how a business outcome connects business alignment, data foundations, and practical delivery, followed by an evidence-based investment decision.
 
-The design includes keyboard focus styles, a skip link, native expandable project details, responsive navigation, and reduced-motion support. The CV’s print button uses the browser’s print dialog; choose **Save as PDF** to export it.
+Case studies describe contributions made within Accenture and Fugro employment. Organisation logos indicate professional background. No client endorsements, guaranteed outcomes, rates, or availability dates are asserted. Professional history and metrics come from the previously supplied public website content; confirm CV dates and certification statuses before publishing.
 
-## Design direction
+## Project enquiry behaviour
 
-Inspired by the typography, warm neutral backgrounds of https://cribconnects.ai/en/. The site uses a light olive green palette with sage accents. The layout, graphic, and code are original. Your portrait and professional content come from https://ullasrajvanshi.github.io/.
+The form uses native required-field and email validation, then creates a `mailto:` draft containing the visitor’s name, email, optional company, chosen engagement, and project context. The visitor reviews and sends that draft in their email application. The website does not submit the form to a server or store its contents.
 
+A visible direct email address and LinkedIn link remain available. Without JavaScript, the site shows a direct-email fallback instead of the form. The mobile navigation also remains available without JavaScript. No external scheduling service is required.
+
+## Design and accessibility
+
+Cream, light olive, and dark botanical tones support a consulting-focused design. Large typography, a delivery workstream diagram, three service cards, and outcome-led case studies replace the earlier portfolio treatment. The design includes visible keyboard focus, a skip link, native expandable details, labelled form fields, and reduced-motion support. The CV’s print button opens the browser print dialog for printing or saving as PDF.
+
+Google Fonts supplies DM Sans and Manrope. Local font fallbacks are included when Google Fonts is unavailable. All portrait and logo assets are local.
+
+## Verification
+
+Run `node --check script.js` and `node --test tests/contact.test.cjs` in the working source directory. The behaviour tests cover email-draft encoding, required-field handling, service selection, optional company information, mobile-menu keyboard behaviour, and shared-script compatibility with the CV page. These use a minimal DOM harness and do not replace browser layout testing. The deployment ZIP contains only the website and this guide; the test file stays in the working source directory.
 
 ## Logo sources
 
-- Accenture: https://commons.wikimedia.org/wiki/File:Accenture.svg (wordmark supplied by Accenture).
+- Accenture: https://commons.wikimedia.org/wiki/File:Accenture.svg
 - Fugro: https://www.fugro.com/fugro-logo.png (transparent padding cropped for layout).
 - TU Delft: https://www.tudelft.nl/_assets/2f383d4a929ad3d42eff11e81cdd4068/img/logo.svg
 
-Logo images are stored locally in `assets/logos/`. Brand artwork keeps its original colours; TU Delft’s supplied currentColor variant renders in black.
+Brand artwork retains its original colours. TU Delft’s supplied currentColor variant renders in black. The original visual reference was https://cribconnects.ai/en/; the implementation is original.
